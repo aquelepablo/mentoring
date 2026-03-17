@@ -1,0 +1,35 @@
+# call: uv run python -m tests.solution_03_test
+
+from solving_problems.solution_03 import ticket_triage
+
+print("--- INICIO TESTES ---") 
+
+ticket_triage("cli-001", "Premium", "Erro Grave", "1")
+ticket_triage("cli-002", "Standard", "Erro Grave", "25")
+ticket_triage("cli-003", "Standard", "Erro Grave", "24")
+ticket_triage("cli-004", "Premium", "Duvida", "2")
+ticket_triage("cli-005", "Educacional", "Erro Grave", "10")
+ticket_triage("cli-006", "Premium", "Sugestao", "3")
+ticket_triage("cli-007", "Standard", "Dúvida", "4")
+ticket_triage("cli-008", "Educacional", "Duvida", "5")
+ticket_triage("cli-009", "Standard", "Sugestão", "6")
+ticket_triage("cli-010", "Educacional", "Sugestão", "7")
+
+ticket_triage("  cli 011  ", "  premium ", " erro grave ", "  8  ")
+ticket_triage("", "Premium", "Erro Grave", "1")
+ticket_triage("cli-012", "", "Erro Grave", "1")
+ticket_triage("cli-013", "Premium", "", "1")
+ticket_triage("cli-014", "Premium", "Erro Grave", "")
+ticket_triage("cli-015", "VIP", "Erro Grave", "1")
+ticket_triage("cli-016", "Premium", "Bug", "1")
+ticket_triage("cli-017", "Premium", "Erro Grave", "abc")
+ticket_triage("cli-018", "Premium", "Erro Grave", "-1")
+ticket_triage("cli-019", "Standard", "Erro Grave", "0")
+ticket_triage("cli-020", "Standard", "Erro Grave", "24.5")
+ticket_triage("cli-021", "Standard", "Erro Grave", "24,5")
+ticket_triage(None, "Premium", "Erro Grave", "1")
+ticket_triage("cli-022", None, "Erro Grave", "1")
+ticket_triage("cli-023", "Premium", None, "1")
+ticket_triage("cli-024", "Premium", "Erro Grave", None)
+print("\nTeste com input manual:\n")
+ticket_triage(None, None, None, None, ask_for_input=True)

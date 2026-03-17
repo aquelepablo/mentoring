@@ -9,7 +9,7 @@ is client vip
 def discount_calc(name: str, 
                   qty_products: int, 
                   product_value: float, 
-                  client_vip: str, 
+                  client_vip: str,
                   ask_for_input: bool = False):
 
     try:
@@ -96,5 +96,5 @@ def discount_calc(name: str,
         print(f"Valor Final a Pagar: ${round(cart_value_discounted, 2)}\n")
 
     except Exception as e:
-        print(f"⚠  {e}")
+        print(f"Erro: {e}")
 
