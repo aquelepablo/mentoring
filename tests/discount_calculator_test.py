@@ -1,6 +1,6 @@
 # call: uv run python -m tests.solution_02_test
 
-from solving_problems.solution_02 import discount_calc
+from solving_problems.e02_discount_calculator import discount_calc
 
 print("--- INICIO TESTES ---") 
 

@@ -1,6 +1,6 @@
 # call: uv run python -m tests.solution_03_test
 
-from solving_problems.solution_03 import ticket_triage
+from solving_problems.e03_ticket_triage import ticket_triage
 
 print("--- INICIO TESTES ---") 
 
