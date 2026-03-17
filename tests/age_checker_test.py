@@ -1,6 +1,6 @@
 #call: uv run python -m tests.solution_01_test
 
-from solving_problems.e01_age_checker import age_checker
+from e01_age_checker import age_checker
 
 age_checker("ana", "17")
 age_checker("bruno", "18")
