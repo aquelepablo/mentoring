@@ -1,62 +1,73 @@
-# Python Mentoring Exercises
+# Python Mentorship Exercises 01
 
-![Python](https://img.shields.io/badge/Python-3.12%2B-blue)
-![Mentoring](https://img.shields.io/badge/Mentoring-Squad%20Academy-orange)
+![Python](https://img.shields.io/badge/Python-3.14%2B-blue)
+![Mentorship](https://img.shields.io/badge/Mentorship-Squad%20Academy-orange)
 ![Status](https://img.shields.io/badge/Status-Learning%20Project-green)
 
-This repository gathers Python exercises developed during mentoring sessions, with emphasis on programming logic, input validation, conditional flows, and scenario-based testing.
+This repository contains the first exercise list developed during my Python mentorship journey. The focus of this project is to practice programming fundamentals through small, scenario-based exercises treated with the same care as a real software project.
 
-## Project Overview
+## Overview
 
-The exercises in this repository are designed to reinforce core Python concepts through small practical problems and iterative improvements.
+This repository is organized as a study project for the first exercise list of the mentorship.
 
-Main areas of practice:
+Main practice areas:
 
-- string handling
-- input validation
+- input handling
 - conditional logic
+- validation rules
 - exception handling
 - code organization
-- simple test design
+- scenario-based testing
 
-## Project Structure
+## Repository Structure
 
-- `solving_problems/`: exercise implementations
-- `tests/`: scenario-based test files
-- `docs/`: mentoring notes, references, and feedback materials
-- `main.py`: local entry point for experiments
+The exercises are currently stored in the project root for easier access during practice.
 
-## Prerequisites
+- `e01_age_checker.py` to `e13_atm_simulator.py`: exercise implementations
+- `tests/`: lightweight test files for selected exercises
+- `docs/`: mentoring notes, references, and project documentation
+- `main.py`: simple project entry point
+- `PROJECT_STRUCTURE.md`: quick guide to the repository layout
 
-This project uses `uv` to manage the environment and run Python commands.
+## Environment
 
-Install project dependencies with:
+This project uses `uv` to manage the local environment and run Python commands.
+
+Install dependencies with:
 
 ```powershell
 uv sync
 ```
 
-## Running the Exercises
+## Running Files
 
-Run a solution file:
+Run the project entry point:
 
 ```powershell
-uv run python .\solving_problems\solution_01.py
+uv run python .\main.py
+```
+
+Run an individual exercise:
+
+```powershell
+uv run python .\e01_age_checker.py
 ```
 
 Run a test file:
 
 ```powershell
-uv run python -m tests.solution_01_test
-uv run python -m tests.solution_02_test
+uv run python .\tests\age_checker_test.py
 ```
 
-## Notes
+## Project Notes
 
-The tests in this repository are intentionally lightweight. Their purpose is to explore different input scenarios, expose edge cases, and help identify bugs during the learning process.
+This repository follows the idea of treating even exercise lists as structured projects. The goal is not only to solve problems, but also to build good habits around naming, documentation, repository organization, and maintainable code.
 
-## Mentoring Context
+## Mentorship Context
 
-This is a study repository used as part of Python mentoring practice and exercise review.
+This is part of a broader Python mentorship path that includes exercise lists, small applications, APIs, and a final project.
 
-The mentoring process for this repository has been guided by [Michel Silva](https://github.com/michelgomessilva/).
+The study path and technical guidance for this phase were provided by [Michel Silva](https://github.com/michelgomessilva).
+
+The naming convention adopted for repositories in this path is:
+`python-mentorship-<type>-<theme-or-number>`
